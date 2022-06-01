@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="test_roll_menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Menu</title>
+</head>
+<body>
+    <div class="navigation">
+        <span style="--i:0;--x:-1;--y:0" ><a href="page2.html"><ion-icon name="image-outline"></a></ion-icon></span>
+        <span style="--i:1;--x:1;--y:0"><a href="page2.html"><ion-icon name="accessibility-outline"></a></ion-icon></span>
+        <span style="--i:2;--x:0;--y:-1"><a href="page2.html"><ion-icon name="alert-circle-outline"></a></ion-icon></span>
+        <span style="--i:3;--x:0;--y:1"><a href="page2.html"><ion-icon name="at-circle-outline"></a></ion-icon></span>
+        <span class="light" style="--i:4;--x:1;--y:1"><ion-icon name="contrast-outline"></ion-icon></span>
+        <span style="--i:5;--x:-1;--y:-1" ><a href="page2.html"><ion-icon name="logo-discord"></a></ion-icon></span>
+        <span style="--i:6;--x:0;--y:0"><a href="page2.html"><ion-icon name="planet-outline"></a></ion-icon></span>
+        <span style="--i:7;--x:-1;--y:1"><a href="page2.html"><ion-icon name="notifications-outline"></a></ion-icon></ion-icon></span>
+        <span style="--i:8;--x:1;--y:-1"><a href="page2.html"><ion-icon name="bookmarks-outline"></a></ion-icon></span>
+    </div>
+
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let navigation = document.querySelector('.navigation');
+        navigation.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+
+    <script>
+        const body = document.querySelector('body');
+        const light = document.querySelector('.light');
+        light.onclick = function(){
+            light.classList.toggle('active')
+            body.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
