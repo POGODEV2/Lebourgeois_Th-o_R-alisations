@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="shortcut icon" href="img/logolsms.png" type="images/png"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Los Amigos - Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>T</h2>
+                <h3>Toma</h3>
+                <p>Pour contacter Toma, veuillez l'ajouter sur discord via le pseudo ci-dessous : AsGhore#6969</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>P</h2>
+                <h3>POGO</h3>
+                <p>Pour contacter POGO, veuillez l'ajouter sur discord via le pseudo ci-dessous : Shelb.V2#0007</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>P</h2>
+                <h3>Paul</h3>
+                <p>Pour contacter Paul, veuillez l'ajouter sur discord via le pseudo ci-dessous : ℙ𝕒𝕦𝕝#6268</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>M</h2>
+                <h3>Maxou</h3>
+                <p>Pour contacter Maxou, veuillez l'ajouter sur discord via le pseudo ci-dessous : !マクサンス MAKUSANSU#6667</p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <p><img src="img/logolsms.png" alt="Logo LSMS" id="logo_lsms"></p><!--<i class='bx bxl-digitalocean'></i>-->
+                <div class="logo_name">Los Amigos</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Rechercher...">
+                <span class="tooltip">Rechercher...</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home-smile'></i>
+                    <span class="links_name">Accueil</span>
+                </a>
+                <span class="tooltip">Accueil</span>
+            </li>
+            <li>
+                <a href="invitations.html">
+                    <i class='bx bxs-envelope-open' ></i>
+                    <span class="links_name">Invitations</span>
+                </a>
+                <span class="tooltip">Invitations</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class='bx bx-message-alt' ></i>
+                    <span class="links_name">Contacte</span>
+                </a>
+                <span class="tooltip">Nous Contacter</span>
+            </li>
+            <li>
+                <a href="secret.html">
+                    <i class='bx bx-question-mark' ></i>
+                    <span class="links_name">Secret</span>
+                </a>
+                <span class="tooltip">Secret</span>
+            </li>
+            <li>
+                <a href="staff.html">
+                    <i class='bx bxs-user-rectangle' ></i>
+                    <span class="links_name">Staff</span>
+                </a>
+                <span class="tooltip">Staff</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="img/logolsms.png" alt="Logo LSMS">
+                    <div class="name_job">
+                        <div class="name">LSMS</div>
+                        <div class="job">Discord Server</div>
+                    </div>
+                </div>
+                <a href="index.html"><img src="img/logolsms.png" alt="Logo LSMS" id="log_out"></a>
+                <!--<i class='bx bx-log-out' id="log_out" ></i>-->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+
+    </script>
+</body>
+</html>

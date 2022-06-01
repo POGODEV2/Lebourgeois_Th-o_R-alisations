@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" lang="fr" content="Le site LSMS officiel du discord francophone communautaire Los Amigos | Contact disponible 24/24, 7/7 !">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/logolsms.png" type="images/png"/>
+    <title>LSMS - Accueil | Discord Francophone Communautaire</title>
+</head>
+<body>
+    
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <a href="game.html" class="logo"><img src="img/logolsms.png" title="Logo LSMS"></a>
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="informations.html">Informations</a></li>
+            <li><a href="invitations.html">Invitations</a></li>
+            <li><a href="contact.html">Contacte</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Los Amigos</h2>
+        <a href="#sec" id="btn">Afficher Plus</a>
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Présentation rapide</h2>
+        <p>Le serveur Los Amigos est un serveur Discord français communautaire. Il représente une large communauté (d'environ 120 personnes). Tu veux du fun, des jeux, des évenements, etc ? Tu es au bon endroit. Ici, tu es sur le site officiel de la team LSMS, pas mal nan ? Le serveur discord possède également une histoire assez folle. Elle est assez longue mais elle méritera d'être écoutée plus tard. En ce qui concerne l'équipe, c'est très simple. Nous avons une équipe avec un staff certe pas très nombreux mais tout de même très actif, respectueux et dynamique. Cela permet de ne pas avoir un discord remplis de Staff (Helpeur, Modo, Admin, etc) partout ! vous serez ravis de savoir que le staff fais maintenant tourner le serveur depuis environ 1 année. Eh oui ! C'est beaucoup.<br><br>Comment savoir si le Discord est de qualité ? Franchement, il est sans doute comme les autres niveau contenu. Cependant, il possède différentes chose que les autres Serveur Discord n'ont pas ! Comme tu as déjà dû le voir, nous avons un site internet. Très peu courant pour un serveur discord pas vrai ? ET C'EST PAS TOUT ! Nous avons aussi un bot Discord spécifique et inédit appartennant à la team LSMS, développé par notre Dev faisant partie de l'équipe du Staff. Personellement, je valide fort.<br><br>Toute l'équipe du staff ainsi que la communauté fidèle comptent sur vous pour venir compléter celle-ci. Ce serais quand même chiant de passer à coté d'un serveur possédant des tas de qualités n'est ce pas ? Vous pourrez profiter de centaines de cadeaux différents, allant d'un nitro Discord jusqu'au Giveway de différents jeux de votre choix (des limitations de prix sont mis en place, abuse pas non plus !), c'est vraiment pas mal.<br><br>Pour finir ce monologue certe long mais important, sache que sur ce site, il te reste pas mal de chose à découvrir, fais attention où tu mets les pieds, cet univers est remplis de surprise et d'Easter Eggs. Soit tu laisses, soit tu t'y aventures pour percer tout les secrets de la team LSMS. Maintenant, à toi de décider !</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+        window.addEventListener('load', function () {
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        })
+    </script>
+</body>
+</html>

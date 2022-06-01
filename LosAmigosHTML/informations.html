@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="infos.css">
+    <link rel="shortcut icon" href="img/logolsms.png" type="images/png"/>
+    <title>Los Amigos - Informations</title>
+    <!-- Boxicons CDN Links -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <p><img src="img/logolsms.png" alt="Logo LSMS" id="logo_lsms"></p><!--<i class='bx bxl-digitalocean'></i>-->
+                <div class="logo_name">Los Amigos</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Rechercher...">
+                <span class="tooltip">Rechercher...</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home-smile'></i>
+                    <span class="links_name">Accueil</span>
+                </a>
+                <span class="tooltip">Accueil</span>
+            </li>
+            <li>
+                <a href="invitations.html">
+                    <i class='bx bxs-envelope-open' ></i>
+                    <span class="links_name">Invitations</span>
+                </a>
+                <span class="tooltip">Invitations</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class='bx bx-message-alt' ></i>
+                    <span class="links_name">Contacte</span>
+                </a>
+                <span class="tooltip">Nous Contacter</span>
+            </li>
+            <li>
+                <a href="secret.html">
+                    <i class='bx bx-question-mark' ></i>
+                    <span class="links_name">Secret</span>
+                </a>
+                <span class="tooltip">Secret</span>
+            </li>
+            <li>
+                <a href="staff.html">
+                    <i class='bx bxs-user-rectangle' ></i>
+                    <span class="links_name">Staff</span>
+                </a>
+                <span class="tooltip">Staff</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="img/logolsms.png" alt="Logo LSMS">
+                    <div class="name_job">
+                        <div class="name">LSMS</div>
+                        <div class="job">Discord Server</div>
+                    </div>
+                </div>
+                <a href="index.html"><img src="img/logolsms.png" alt="Logo LSMS" id="log_out"></a>
+                <!--<i class='bx bx-log-out' id="log_out" ></i>-->
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">
+            <img src="img/stars.png" alt="Image Stars" id="stars">
+            <h1 title="Je t'aime">Tu veux des informations en plus ?</h1><br />
+            <p>
+                Bon ! Passons maintenant à l'histoire du fameux discord Los Amigos. Tout commence il y a 1 an. Un groupe de pote de 5 personnes veulent créer un serveur discord pour se rassembler et rassembler les potes des potes pour jouer entre connaissance. Jusque là, rien de spécial. Juste un serveur Discord privé entre pote. C'est ici que le plus intéressant commence.<br /><br />
+                Il faut savoir que le serveur est passé de 30 membres à 120 membres en même pas 1 mois. Comment c'est possible ? C'est tout simple. Tout d'abord, le groupe de 5 potes s'est regroupé pour former le Staff qui est donc compté de 2 fondateurs, 2 admins et 1 modérateurs (ainsi que d'1 helpeuse au cas où). Ce groupe de staff n'a toujours pas bougé et ne bougera pas de si tôt.<br /><br />
+                L'heure d'une GROSSE réunion a sonnée ! Le Staff se réunis pour justement savoir si l'idée de transformer le serveur en communautaire était une bonne idée. TOUS LE MONDE étaient d'accord. C'était donc partis pour du travaille acharné.<br /><br />
+                Des partenariats sont lancés, le bouche à oreille marche, tout se passe bien. Ainsi, le développeur officiel décide dde créer un BOT Discord officiel et inédit nommé LSMS. (Sympa le pseudo, vous trouvez pas ?). Cela rajoute un + par rapport à tout les autres serveur discord que tout le monde connais. Cela coûte du temp et de l'argent mais ça marche donc c'est le principal. <br /><br />
+                Bref, le serveur atteind 120 membres actifs, des évenements surgissent de partout, des soirées spéciales s'effectuent. Jusqu'au malheureux jour où le serveur commence à être de moins en moins actifs pour cause des vacances et des départs. Il est donc temps de retrouver cette activité avec de nouvelles mise à jour (comme le site internet). L'heure est grand temps que ce serveur grandisse de plus en plus, et il a besoin de TOI ! 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+
+    </script>
+
+</body>
+</html>
