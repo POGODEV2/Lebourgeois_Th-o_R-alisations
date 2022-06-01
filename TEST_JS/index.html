@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SHELB - Accueil</title>
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="2">S</span>
+                    <span data-depth-y="-6">H</span>
+                    <span data-depth-y="5">E</span>
+                    <span data-depth-y="-8">L</span>
+                    <span data-depth-y="-3">B</span>
+                </h2>
+                <div class="layer zIndexAbove" data-depth-y="-0.5"><img src="images/casque.png"></div>
+                <div class="layer zIndexAbove" data-depth-y="0.75"><img src="images/clavier.png"></div>
+                <div class="layer zIndexAbove" data-depth-y="1"><img src="images/disque.png"></div>
+                <div class="layer" data-depth-y="-0.25"><img src="images/guitars.png"></div>
+                <div class="layer" data-depth-y="0.625"><img src="images/micro.png"></div>
+                <div class="layer" data-depth-y="-0.375"><img src="images/notem.png"></div>
+                <div class="layer zIndexAbove" data-depth-y="0.5"><img src="images/synthe.png"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('text');
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(text);
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
